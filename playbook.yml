@@ -1,0 +1,7 @@
+- name: Deploy a web application
+  hosts: db_and_web_servers
+  any_errors_fatal: true
+  roles:
+    - python
+    - mysql_db
+    - flask_web
